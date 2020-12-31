@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include raissyon *.css
+recursive-include raissyon *.csv
+recursive-include raissyon *.html
+recursive-include raissyon *.ico
+recursive-include raissyon *.js
+recursive-include raissyon *.json
+recursive-include raissyon *.md
+recursive-include raissyon *.png
+recursive-include raissyon *.py
+recursive-include raissyon *.svg
+recursive-include raissyon *.txt
+recursive-exclude raissyon *.pyc
