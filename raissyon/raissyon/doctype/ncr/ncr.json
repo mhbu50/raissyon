@@ -1,0 +1,227 @@
+{
+ "autoname": "NCR.######",
+ "creation": "2020-11-29 01:21:12.103146",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "audit_no",
+  "audit_date",
+  "column_break_4",
+  "document_title__no",
+  "rev__no",
+  "auditorinitiator",
+  "auditees",
+  "section_break_8",
+  "details_of_the_internal_audit",
+  "below_section_to_be_filled_by_auditeeprocess_owner",
+  "correction",
+  "root_cause",
+  "column_break_14",
+  "corrective_action",
+  "correction__corrective_action_completion_section",
+  "correction_completion_date",
+  "corrective_action_completion_date",
+  "column_break_17",
+  "responsible_completion_signature",
+  "responsible_action_signature",
+  "section_break_20",
+  "verification_of_correction",
+  "correction_corrective_action_accepted",
+  "re_audit_requiredre_root_cause_analysis",
+  "auditorsinitiators_name_signature",
+  "audit_team_leadersinitiators",
+  "column_break_28",
+  "auditeesprocess_owners_signature",
+  "date_of_verification",
+  "closing_signature_mr",
+  "target_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "audit_no",
+   "fieldtype": "Data",
+   "label": "Audit No"
+  },
+  {
+   "fieldname": "audit_date",
+   "fieldtype": "Date",
+   "label": "Audit Date"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "document_title__no",
+   "fieldtype": "Data",
+   "label": "Document Title / No"
+  },
+  {
+   "fieldname": "rev__no",
+   "fieldtype": "Data",
+   "label": "Rev  No"
+  },
+  {
+   "fieldname": "auditorinitiator",
+   "fieldtype": "Link",
+   "label": "Auditor/Initiator",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "auditees",
+   "fieldtype": "Small Text",
+   "label": "Auditee/s"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "(To be filled by Auditor/initiator of Non conformity)",
+   "fieldname": "details_of_the_internal_audit",
+   "fieldtype": "Small Text",
+   "label": "Details of the Internal Audit /other Non-Conformance observed"
+  },
+  {
+   "fieldname": "below_section_to_be_filled_by_auditeeprocess_owner",
+   "fieldtype": "Section Break",
+   "label": "Below section to be filled by Auditee/process Owner"
+  },
+  {
+   "fieldname": "correction",
+   "fieldtype": "Small Text",
+   "label": "Correction"
+  },
+  {
+   "fieldname": "root_cause",
+   "fieldtype": "Small Text",
+   "label": "Root Cause of the Internal Audit NC/Service or Process NC/Service or Process"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "corrective_action",
+   "fieldtype": "Small Text",
+   "label": "Corrective Action"
+  },
+  {
+   "fieldname": "correction__corrective_action_completion_section",
+   "fieldtype": "Section Break",
+   "label": "Correction & Corrective action Completion: (To be filled by Auditee)"
+  },
+  {
+   "fieldname": "correction_completion_date",
+   "fieldtype": "Date",
+   "label": "Correction Completion Date"
+  },
+  {
+   "fieldname": "corrective_action_completion_date",
+   "fieldtype": "Date",
+   "label": "Corrective Action Completion Date"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "responsible_completion_signature",
+   "fieldtype": "Attach Image",
+   "label": "Responsible Completion Signature"
+  },
+  {
+   "fieldname": "responsible_action_signature",
+   "fieldtype": "Attach Image",
+   "label": "Responsible Action Signature"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "verification_of_correction",
+   "fieldtype": "Section Break",
+   "label": "Verification of Correction & Corrective Action Taken: (To be filled by MR)"
+  },
+  {
+   "fieldname": "correction_corrective_action_accepted",
+   "fieldtype": "Select",
+   "label": "Correction, Corrective Action Accepted",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "re_audit_requiredre_root_cause_analysis",
+   "fieldtype": "Select",
+   "label": "Re Audit required/Re Root Cause Analysis ",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "auditorsinitiators_name_signature",
+   "fieldtype": "Link",
+   "label": "Auditors/Initiators Name Signature",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "audit_team_leadersinitiators",
+   "fieldtype": "Link",
+   "label": "Audit team leaders/Initiators ",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "auditeesprocess_owners_signature",
+   "fieldtype": "Link",
+   "label": "Auditee/s/process owners Signature",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "date_of_verification",
+   "fieldtype": "Date",
+   "label": "Date of Verification"
+  },
+  {
+   "fieldname": "closing_signature_mr",
+   "fieldtype": "Data",
+   "label": "Closing Signature MR"
+  },
+  {
+   "fieldname": "target_date",
+   "fieldtype": "Date",
+   "label": "Target Date"
+  }
+ ],
+ "modified": "2021-02-01 23:36:15.508325",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "NCR",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

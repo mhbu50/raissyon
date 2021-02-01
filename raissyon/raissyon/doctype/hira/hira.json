@@ -1,0 +1,172 @@
+{
+ "autoname": "HIRA.#####",
+ "creation": "2020-11-14 12:58:37.826126",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "area",
+  "risk_assessment_number",
+  "column_break_3",
+  "category",
+  "risk_assessment_date",
+  "assessor_section",
+  "assessor_name",
+  "column_break_8",
+  "assessor_date",
+  "assessor_signature",
+  "team_member_section",
+  "team_member",
+  "column_break_6",
+  "date",
+  "team_member_sign",
+  "hseq_off_section",
+  "hseq_off_name",
+  "column_break_18",
+  "hseq_off_date",
+  "hseq_off_sign",
+  "section_break_10",
+  "table_11"
+ ],
+ "fields": [
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Area"
+  },
+  {
+   "fieldname": "risk_assessment_number",
+   "fieldtype": "Data",
+   "label": "Risk Assessment Number"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Category"
+  },
+  {
+   "fieldname": "risk_assessment_date",
+   "fieldtype": "Date",
+   "label": "Risk Assessment Date"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "assessor_section",
+   "fieldtype": "Section Break",
+   "label": "Assessor"
+  },
+  {
+   "fieldname": "assessor_name",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assessor_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "assessor_name.sign",
+   "fieldname": "assessor_signature",
+   "fieldtype": "Attach Image",
+   "label": "Sign"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "team_member_section",
+   "fieldtype": "Section Break",
+   "label": "Team Member"
+  },
+  {
+   "fieldname": "team_member",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "team_member.sign",
+   "fieldname": "team_member_sign",
+   "fieldtype": "Attach Image",
+   "label": "Sign"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "hseq_off_section",
+   "fieldtype": "Section Break",
+   "label": "HSEQ Off. "
+  },
+  {
+   "fieldname": "hseq_off_name",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hseq_off_date",
+   "fieldtype": "Data",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "hseq_off_name.sign",
+   "fieldname": "hseq_off_sign",
+   "fieldtype": "Attach Image",
+   "label": "Sign"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_11",
+   "fieldtype": "Table",
+   "options": "HIRA Activity"
+  }
+ ],
+ "modified": "2021-02-01 23:37:32.644191",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "HIRA",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,67 @@
+{
+ "creation": "2020-10-23 23:51:48.043330",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "document",
+  "name1",
+  "type",
+  "column_break_4",
+  "process_owner",
+  "revision"
+ ],
+ "fields": [
+  {
+   "fieldname": "document",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Document",
+   "options": "Document"
+  },
+  {
+   "columns": 3,
+   "fetch_from": "document.document_name",
+   "fieldname": "name1",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Name"
+  },
+  {
+   "fetch_from": "document.document_type",
+   "fieldname": "type",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Type"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "document.process_owner",
+   "fieldname": "process_owner",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Process Owner"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "document.last_revision",
+   "fieldname": "revision",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Revision"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-02-01 23:40:59.997763",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "List of Documents",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,141 @@
+{
+ "creation": "2020-11-14 12:57:43.235149",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "area",
+  "hazard_identified",
+  "column_break_3",
+  "risk",
+  "existing_control",
+  "section_break_5",
+  "sev1",
+  "s_p_1",
+  "column_break_7",
+  "prop_1",
+  "classification_level1",
+  "additional_control",
+  "section_break_11",
+  "sev2",
+  "s_p_2",
+  "column_break_14",
+  "prop_2",
+  "classification_level2",
+  "section_break_15",
+  "responsibility"
+ ],
+ "fields": [
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Area"
+  },
+  {
+   "fieldname": "hazard_identified",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Hazard identified"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "risk",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Risk"
+  },
+  {
+   "fieldname": "existing_control",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Existing Control"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sev1",
+   "fieldtype": "Int",
+   "label": "Sev"
+  },
+  {
+   "fieldname": "s_p_1",
+   "fieldtype": "Int",
+   "label": "S * P",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prop_1",
+   "fieldtype": "Int",
+   "label": "Prop"
+  },
+  {
+   "fieldname": "classification_level1",
+   "fieldtype": "Data",
+   "label": "Classification Level"
+  },
+  {
+   "fieldname": "additional_control",
+   "fieldtype": "Data",
+   "label": "Additional Control"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sev2",
+   "fieldtype": "Int",
+   "label": "Sev"
+  },
+  {
+   "fieldname": "s_p_2",
+   "fieldtype": "Int",
+   "label": "S * P",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prop_2",
+   "fieldtype": "Int",
+   "label": "Prop"
+  },
+  {
+   "fieldname": "classification_level2",
+   "fieldtype": "Data",
+   "label": "Classification Level"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "responsibility",
+   "fieldtype": "Link",
+   "label": "Responsibility",
+   "options": "Employee"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-02-01 23:37:37.865085",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "HIRA Activity",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

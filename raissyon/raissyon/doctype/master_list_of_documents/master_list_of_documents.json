@@ -1,0 +1,39 @@
+{
+ "creation": "2020-10-23 23:55:59.391637",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "list_of_documents"
+ ],
+ "fields": [
+  {
+   "fieldname": "list_of_documents",
+   "fieldtype": "Table",
+   "label": "List of Documents",
+   "options": "List of Documents"
+  }
+ ],
+ "issingle": 1,
+ "modified": "2021-02-01 23:40:54.423664",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Master List of Documents",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

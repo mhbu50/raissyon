@@ -1,0 +1,372 @@
+{
+ "autoname": "CMR.#######",
+ "creation": "2020-11-21 00:03:56.804489",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "department",
+  "requestor",
+  "employee_number",
+  "designation",
+  "requestor_signature",
+  "column_break_6",
+  "date_of_application",
+  "date_of_initiation",
+  "locationarea",
+  "reason_for_change_section",
+  "comments1",
+  "description_of_change_section",
+  "purpose_for_the_change",
+  "change_in_detail",
+  "column_break_15",
+  "impact_of_change",
+  "type_of_change_section",
+  "type_of_change",
+  "expiration_date",
+  "temporary_conditions_returned_to_normal_condition",
+  "date_returned",
+  "scale_of_change",
+  "hira",
+  "column_break_25",
+  "verified_by",
+  "verified_by_signature",
+  "date1",
+  "aspectimpact",
+  "applicable_changes_section",
+  "legal_requirements_and_other_requirements",
+  "work_locations_and_surroundings",
+  "working_conditions",
+  "work_organization",
+  "work_force",
+  "column_break_29",
+  "existing_products_services_and_processes",
+  "new_products_services_and_processes",
+  "technological_change",
+  "hazards_and_risks",
+  "equipment",
+  "final_verification_and_approval_section",
+  "comments2",
+  "approved_by_section",
+  "supervisor",
+  "date2",
+  "column_break_44",
+  "management_representative",
+  "date3",
+  "column_break_47",
+  "safety_officer",
+  "date4"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "requestor",
+   "fieldtype": "Link",
+   "label": "Requestor",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "requestor.employee_number",
+   "fieldname": "employee_number",
+   "fieldtype": "Data",
+   "label": "Employee Number",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "requestor.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "requestor.sign",
+   "fieldname": "requestor_signature",
+   "fieldtype": "Attach Image",
+   "label": "Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_application",
+   "fieldtype": "Date",
+   "label": "Date of Application"
+  },
+  {
+   "fieldname": "date_of_initiation",
+   "fieldtype": "Date",
+   "label": "Date of Initiation"
+  },
+  {
+   "fieldname": "locationarea",
+   "fieldtype": "Link",
+   "label": "Location/Area",
+   "options": "Location"
+  },
+  {
+   "fieldname": "reason_for_change_section",
+   "fieldtype": "Section Break",
+   "label": "REASON FOR CHANGE"
+  },
+  {
+   "fieldname": "comments1",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "description_of_change_section",
+   "fieldtype": "Section Break",
+   "label": "DESCRIPTION OF CHANGE"
+  },
+  {
+   "fieldname": "purpose_for_the_change",
+   "fieldtype": "Small Text",
+   "label": "Purpose for the change"
+  },
+  {
+   "fieldname": "change_in_detail",
+   "fieldtype": "Small Text",
+   "label": "Change in detail"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "impact_of_change",
+   "fieldtype": "Small Text",
+   "label": "Impact of change"
+  },
+  {
+   "fieldname": "type_of_change_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "type_of_change",
+   "fieldtype": "Select",
+   "label": "Type Of Change",
+   "options": "\nTemporary\nPermanent"
+  },
+  {
+   "depends_on": "eval:doc.type_of_change ==\"Temporary\"",
+   "fieldname": "expiration_date",
+   "fieldtype": "Date",
+   "label": "Expiration Date"
+  },
+  {
+   "depends_on": "eval:doc.type_of_change ==\"Temporary\"",
+   "fieldname": "temporary_conditions_returned_to_normal_condition",
+   "fieldtype": "Select",
+   "label": "Temporary conditions returned to normal condition?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.type_of_change ==\"Temporary\"",
+   "fieldname": "date_returned",
+   "fieldtype": "Date",
+   "label": " Date returned"
+  },
+  {
+   "fieldname": "scale_of_change",
+   "fieldtype": "Select",
+   "label": "Scale Of Change",
+   "options": "\nMajor\nMinor"
+  },
+  {
+   "fieldname": "hira",
+   "fieldtype": "Date",
+   "label": "HIRA"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Link",
+   "label": "Verified by",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "verified_by.sign",
+   "fieldname": "verified_by_signature",
+   "fieldtype": "Attach Image",
+   "label": "Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date1",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "aspectimpact",
+   "fieldtype": "Data",
+   "label": "Aspect/Impact"
+  },
+  {
+   "fieldname": "applicable_changes_section",
+   "fieldtype": "Section Break",
+   "label": "APPLICABLE CHANGES"
+  },
+  {
+   "default": "0",
+   "fieldname": "legal_requirements_and_other_requirements",
+   "fieldtype": "Check",
+   "label": "Legal Requirements And Other Requirements"
+  },
+  {
+   "default": "0",
+   "fieldname": "work_locations_and_surroundings",
+   "fieldtype": "Check",
+   "label": "Work Locations And Surroundings"
+  },
+  {
+   "default": "0",
+   "fieldname": "working_conditions",
+   "fieldtype": "Check",
+   "label": "Working Conditions"
+  },
+  {
+   "default": "0",
+   "fieldname": "work_organization",
+   "fieldtype": "Check",
+   "label": "Work Organization"
+  },
+  {
+   "default": "0",
+   "fieldname": "work_force",
+   "fieldtype": "Check",
+   "label": "Work Force"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "existing_products_services_and_processes",
+   "fieldtype": "Check",
+   "label": "Existing Products, Services And Processes"
+  },
+  {
+   "default": "0",
+   "fieldname": "new_products_services_and_processes",
+   "fieldtype": "Check",
+   "label": "New Products, Services And Processes"
+  },
+  {
+   "default": "0",
+   "fieldname": "technological_change",
+   "fieldtype": "Check",
+   "label": "Technological Change"
+  },
+  {
+   "default": "0",
+   "fieldname": "hazards_and_risks",
+   "fieldtype": "Check",
+   "label": "Hazards and Risks"
+  },
+  {
+   "default": "0",
+   "fieldname": "equipment",
+   "fieldtype": "Check",
+   "label": "Equipment"
+  },
+  {
+   "fieldname": "final_verification_and_approval_section",
+   "fieldtype": "Section Break",
+   "label": "FINAL VERIFICATION AND APPROVAL"
+  },
+  {
+   "fieldname": "comments2",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "approved_by_section",
+   "fieldtype": "Section Break",
+   "label": "Verified and Approved By"
+  },
+  {
+   "fieldname": "supervisor",
+   "fieldtype": "Link",
+   "label": "Supervisor",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "date2",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "management_representative",
+   "fieldtype": "Link",
+   "label": "Management Representative",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "date3",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_47",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "safety_officer",
+   "fieldtype": "Link",
+   "label": " Safety Officer",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "date4",
+   "fieldtype": "Date",
+   "label": "Date"
+  }
+ ],
+ "modified": "2021-02-01 23:36:52.859124",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "MOC Request",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

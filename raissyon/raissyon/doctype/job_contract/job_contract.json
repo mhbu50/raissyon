@@ -1,0 +1,255 @@
+{
+ "autoname": "JC.#####",
+ "creation": "2020-11-10 16:08:05.675186",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_offer",
+  "applicant_name",
+  "nationality",
+  "id_iqama",
+  "designation",
+  "department",
+  "mobile_number",
+  "section_break_4",
+  "company",
+  "commercial_register",
+  "phone_no",
+  "fax",
+  "email",
+  "presented_by",
+  "section_break_13",
+  "start_date",
+  "end_date",
+  "working_hours",
+  "start_time",
+  "end_time",
+  "working_days",
+  "notes_period",
+  "column_break_21",
+  "total_salary",
+  "basic_salary",
+  "housing",
+  "transportation",
+  "mobil_allowance",
+  "additional_allowance",
+  "vacation",
+  "section_break_29",
+  "cover_page",
+  "job_contract_term",
+  "add_all"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_offer",
+   "fieldtype": "Link",
+   "label": "Job Offer",
+   "options": "Job Offer"
+  },
+  {
+   "fetch_from": "job_offer.applicant_name",
+   "fetch_if_empty": 1,
+   "fieldname": "applicant_name",
+   "fieldtype": "Data",
+   "label": "Applicant Name",
+   "translatable": 1
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality",
+   "translatable": 1
+  },
+  {
+   "fieldname": "id_iqama",
+   "fieldtype": "Data",
+   "label": "ID/Iqama"
+  },
+  {
+   "fetch_from": "job_offer.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "job_offer.company",
+   "fetch_if_empty": 1,
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fetch_from": "company.commercial_register",
+   "fieldname": "commercial_register",
+   "fieldtype": "Read Only",
+   "label": "commercial_register"
+  },
+  {
+   "fetch_from": "company.phone_no",
+   "fieldname": "phone_no",
+   "fieldtype": "Data",
+   "label": "phone_no",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "company.fax",
+   "fieldname": "fax",
+   "fieldtype": "Data",
+   "label": "fax",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "company.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "email",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "company.presented_by",
+   "fieldname": "presented_by",
+   "fieldtype": "Read Only",
+   "label": "Presented By"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "working_hours",
+   "fieldtype": "Int",
+   "label": "Working Hours"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Int",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Int",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "working_days",
+   "fieldtype": "Int",
+   "label": "Working Days"
+  },
+  {
+   "description": "Month",
+   "fieldname": "notes_period",
+   "fieldtype": "Int",
+   "label": "Notice Period"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_salary",
+   "fieldtype": "Int",
+   "label": "Total Salary"
+  },
+  {
+   "fieldname": "basic_salary",
+   "fieldtype": "Int",
+   "label": "Basic Salary"
+  },
+  {
+   "fieldname": "housing",
+   "fieldtype": "Int",
+   "label": "Housing"
+  },
+  {
+   "fieldname": "transportation",
+   "fieldtype": "Int",
+   "label": "Transportation"
+  },
+  {
+   "fieldname": "mobil_allowance",
+   "fieldtype": "Int",
+   "label": "Mobil Allowance"
+  },
+  {
+   "fieldname": "additional_allowance",
+   "fieldtype": "Int",
+   "label": "Additional allowance"
+  },
+  {
+   "fieldname": "vacation",
+   "fieldtype": "Int",
+   "label": "Vacation"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cover_page",
+   "fieldtype": "Text Editor",
+   "label": "Cover Page"
+  },
+  {
+   "fieldname": "job_contract_term",
+   "fieldtype": "Table",
+   "label": "Job Contract Term",
+   "options": "Job Contract Term"
+  },
+  {
+   "fieldname": "add_all",
+   "fieldtype": "Button",
+   "label": "Add All"
+  }
+ ],
+ "modified": "2021-02-01 23:21:57.263444",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Job Contract",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

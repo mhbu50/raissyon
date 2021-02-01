@@ -1,0 +1,130 @@
+{
+ "autoname": "IAR.######",
+ "creation": "2020-11-29 00:52:26.671079",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "audit_date",
+  "audit_report_number",
+  "audit_reference_number",
+  "column_break_4",
+  "document_no",
+  "revision_no",
+  "auditors",
+  "auditees",
+  "results_of_the_audit_section",
+  "positive_points",
+  "conformities",
+  "recommendations",
+  "section_break_14",
+  "auditor",
+  "date",
+  "signature"
+ ],
+ "fields": [
+  {
+   "fieldname": "audit_date",
+   "fieldtype": "Date",
+   "label": "Audit Date"
+  },
+  {
+   "fieldname": "audit_report_number",
+   "fieldtype": "Data",
+   "label": "Audit Report Number"
+  },
+  {
+   "fieldname": "audit_reference_number",
+   "fieldtype": "Data",
+   "label": "Audit Reference Number"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "document_no",
+   "fieldtype": "Data",
+   "label": "Document No"
+  },
+  {
+   "fieldname": "revision_no",
+   "fieldtype": "Data",
+   "label": "Revision No"
+  },
+  {
+   "fieldname": "auditors",
+   "fieldtype": "Data",
+   "label": "Auditor/s"
+  },
+  {
+   "fieldname": "auditees",
+   "fieldtype": "Data",
+   "label": "Auditee/s"
+  },
+  {
+   "fieldname": "results_of_the_audit_section",
+   "fieldtype": "Section Break",
+   "label": " The above process has been audited and the following are the results of the audit"
+  },
+  {
+   "fieldname": "positive_points",
+   "fieldtype": "Small Text",
+   "label": "Positive Points "
+  },
+  {
+   "fieldname": "conformities",
+   "fieldtype": "Small Text",
+   "label": "The following Non Conformities were encountered during the audit"
+  },
+  {
+   "fieldname": "recommendations",
+   "fieldtype": "Small Text",
+   "label": "Recommendations For Improvement"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "auditor",
+   "fieldtype": "Link",
+   "label": "Auditor",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "auditor.sign",
+   "fieldname": "signature",
+   "fieldtype": "Attach Image",
+   "label": "Signature"
+  }
+ ],
+ "modified": "2021-02-01 23:36:03.251198",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Internal Audit Report",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

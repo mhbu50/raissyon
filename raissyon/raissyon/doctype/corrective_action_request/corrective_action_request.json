@@ -1,0 +1,150 @@
+{
+ "autoname": "CAR.######",
+ "creation": "2020-11-28 13:57:09.463422",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "request_originator",
+  "requested_date",
+  "projectlocation",
+  "column_break_4",
+  "sign_of_originator",
+  "car_number",
+  "basis_for_car",
+  "description_of_the_problem_section",
+  "attach_copy_of_warning_letters_if_applicable",
+  "correction",
+  "possible_causes",
+  "proposed_corrective_action",
+  "corrective_action_section",
+  "assigned_to",
+  "target_date",
+  "completed_date",
+  "signature_for_completion",
+  "verification_date",
+  "signature_for_verification"
+ ],
+ "fields": [
+  {
+   "fieldname": "request_originator",
+   "fieldtype": "Link",
+   "label": " Request Originator",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "requested_date",
+   "fieldtype": "Date",
+   "label": " Requested Date"
+  },
+  {
+   "fieldname": "projectlocation",
+   "fieldtype": "Data",
+   "label": " Project/Location"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "request_originator.sign",
+   "fieldname": "sign_of_originator",
+   "fieldtype": "Attach Image",
+   "label": "Sign of Originator"
+  },
+  {
+   "fieldname": "car_number",
+   "fieldtype": "Data",
+   "label": " CAR Number"
+  },
+  {
+   "fieldname": "basis_for_car",
+   "fieldtype": "Data",
+   "label": " Basis for CAR"
+  },
+  {
+   "fieldname": "description_of_the_problem_section",
+   "fieldtype": "Section Break",
+   "label": "Description of the Problem"
+  },
+  {
+   "fieldname": "attach_copy_of_warning_letters_if_applicable",
+   "fieldtype": "Small Text",
+   "label": "Attach copy of Warning Letters, if applicable"
+  },
+  {
+   "fieldname": "correction",
+   "fieldtype": "Small Text",
+   "label": "Correction"
+  },
+  {
+   "fieldname": "possible_causes",
+   "fieldtype": "Small Text",
+   "label": " Possible Causes"
+  },
+  {
+   "fieldname": "proposed_corrective_action",
+   "fieldtype": "Small Text",
+   "label": " Proposed Corrective Action"
+  },
+  {
+   "fieldname": "corrective_action_section",
+   "fieldtype": "Section Break",
+   "label": " Corrective Action"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": " Assigned to",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "target_date",
+   "fieldtype": "Date",
+   "label": " Target Date"
+  },
+  {
+   "fieldname": "completed_date",
+   "fieldtype": "Date",
+   "label": " Completed Date"
+  },
+  {
+   "fieldname": "signature_for_completion",
+   "fieldtype": "Attach Image",
+   "label": " Signature for Completion"
+  },
+  {
+   "fieldname": "verification_date",
+   "fieldtype": "Date",
+   "label": " Verification Date"
+  },
+  {
+   "fieldname": "signature_for_verification",
+   "fieldtype": "Attach Image",
+   "label": " Signature for Verification"
+  }
+ ],
+ "modified": "2021-02-01 23:36:40.591265",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Corrective Action Request",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

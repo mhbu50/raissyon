@@ -1,0 +1,49 @@
+{
+ "creation": "2020-11-28 13:45:11.843511",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section",
+  "checklist_point",
+  "stetus",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "section",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Section"
+  },
+  {
+   "fieldname": "checklist_point",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": " Checklist Point"
+  },
+  {
+   "fieldname": "stetus",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Stetus",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remarks"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-02-01 23:36:45.729734",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Audit Checklist",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

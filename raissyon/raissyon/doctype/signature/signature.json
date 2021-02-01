@@ -1,0 +1,50 @@
+{
+ "autoname": "SIG.####",
+ "creation": "2020-09-26 18:07:16.114419",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "signature"
+ ],
+ "fields": [
+  {
+   "fieldname": "signature",
+   "fieldtype": "Attach Image",
+   "label": "Signature"
+  }
+ ],
+ "image_field": "signature",
+ "modified": "2021-02-01 23:41:30.460243",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Signature",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,66 @@
+{
+ "autoname": "MDS.#####",
+ "creation": "2020-12-23 01:08:21.300622",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "potential_emergencies",
+  "location",
+  "column_break_3",
+  "date",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "potential_emergencies",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Potential Emergencies"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nPlanned\nCompleted"
+  }
+ ],
+ "modified": "2021-02-01 23:25:52.218933",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Mock Drill Schedule",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

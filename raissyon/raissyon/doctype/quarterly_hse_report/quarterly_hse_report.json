@@ -1,0 +1,334 @@
+{
+ "autoname": "QHR.#####",
+ "creation": "2020-12-23 01:29:13.273799",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "meeting_date",
+  "facilitator",
+  "column_break_5",
+  "from",
+  "to",
+  "job_title",
+  "venue",
+  "department",
+  "attendees_section",
+  "hse_present",
+  "absent_without_notice_of_absence",
+  "absent_with_notice_of_absence",
+  "points_of_discussion_section",
+  "discussion_topic_1",
+  "ohs_incidents",
+  "discussion_topic_2",
+  "effectiveness_of_operational",
+  "discussion_topic_3",
+  "competence_training_needs",
+  "discussion_topic_4",
+  "conformity_to_products",
+  "discussion_topic_5",
+  "customer_feedbacks",
+  "discussion_topic_6",
+  "effectiveness_of_ims",
+  "discussion_topic_7",
+  "sales_targets_vs_achievement",
+  "discussion_topic_8",
+  "effectiveness_of_risks",
+  "discussion_topic_9",
+  "vendor_performance",
+  "discussion_topic_10",
+  "measurement_results",
+  "discussion_topic_11",
+  "results_of_evaluation",
+  "discussion_topic_12",
+  "results_of_workers_participation",
+  "discussion_topic_13",
+  "audit_results",
+  "discussion_topic_14",
+  "any_other_topics",
+  "discussion_topic_15",
+  "action_from_the_last_quarterly_meeting",
+  "section_break_44",
+  "next_meeting",
+  "minutes_of_meeting_approval",
+  "coordinator",
+  "column_break_48",
+  "director"
+ ],
+ "fields": [
+  {
+   "fieldname": "meeting_date",
+   "fieldtype": "Date",
+   "label": "Meeting Date"
+  },
+  {
+   "fieldname": "facilitator",
+   "fieldtype": "Small Text",
+   "label": "Facilitator/s"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Time",
+   "label": "From"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Time",
+   "label": "To"
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Link",
+   "label": "Job Title",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "venue",
+   "fieldtype": "Data",
+   "label": "Venue"
+  },
+  {
+   "description": "(Or Organization)",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "attendees_section",
+   "fieldtype": "Section Break",
+   "label": "Attendees"
+  },
+  {
+   "fieldname": "hse_present",
+   "fieldtype": "Table",
+   "label": "HSE Present",
+   "options": "HSE Present"
+  },
+  {
+   "fieldname": "absent_without_notice_of_absence",
+   "fieldtype": "Table",
+   "label": "Absent without notice of absence",
+   "options": "Absent without NOA"
+  },
+  {
+   "fieldname": "absent_with_notice_of_absence",
+   "fieldtype": "Table",
+   "label": "Absent with notice of absence",
+   "options": "Absent with NOC"
+  },
+  {
+   "fieldname": "points_of_discussion_section",
+   "fieldtype": "Section Break",
+   "label": "Points of Discussion"
+  },
+  {
+   "fieldname": "discussion_topic_1",
+   "fieldtype": "Heading",
+   "label": "1. Discussion Topic : OH&S incidents, NCs, injuries/ ill health and OHS complaints including corrective actions"
+  },
+  {
+   "fieldname": "ohs_incidents",
+   "fieldtype": "Table",
+   "options": "OHS incidents"
+  },
+  {
+   "fieldname": "discussion_topic_2",
+   "fieldtype": "Heading",
+   "label": "2. Discussion Topic : Effectiveness of Operational Controls and Mock drills including need to modify or introduction of new controls "
+  },
+  {
+   "fieldname": "effectiveness_of_operational",
+   "fieldtype": "Table",
+   "options": "Effectiveness of Operational"
+  },
+  {
+   "fieldname": "discussion_topic_3",
+   "fieldtype": "Heading",
+   "label": "3. Discussion Topic : Competence / training Needs "
+  },
+  {
+   "fieldname": "competence_training_needs",
+   "fieldtype": "Table",
+   "options": "Competence training Needs"
+  },
+  {
+   "fieldname": "discussion_topic_4",
+   "fieldtype": "Heading",
+   "label": "4. Discussion Topic : Conformity to products/ process/ services "
+  },
+  {
+   "fieldname": "conformity_to_products",
+   "fieldtype": "Table",
+   "options": "Conformity To Products"
+  },
+  {
+   "fieldname": "discussion_topic_5",
+   "fieldtype": "Heading",
+   "label": "5. Discussion Topic: Customer feedbacks and satisfaction "
+  },
+  {
+   "fieldname": "customer_feedbacks",
+   "fieldtype": "Table",
+   "options": "Customer Feedbacks"
+  },
+  {
+   "fieldname": "discussion_topic_6",
+   "fieldtype": "Heading",
+   "label": "6. Discussion Topic: Performance and effectiveness of IMS including objectives and KPIs:"
+  },
+  {
+   "fieldname": "effectiveness_of_ims",
+   "fieldtype": "Table",
+   "options": "Effectiveness of IMS"
+  },
+  {
+   "fieldname": "discussion_topic_7",
+   "fieldtype": "Heading",
+   "label": "7. Discussion Topic: Production and Sales targets VS Achievement"
+  },
+  {
+   "fieldname": "sales_targets_vs_achievement",
+   "fieldtype": "Table",
+   "options": "Sales Targets VS Achievement"
+  },
+  {
+   "fieldname": "discussion_topic_8",
+   "fieldtype": "Heading",
+   "label": "8. Discussion Topic: effectiveness of risks and opportunities "
+  },
+  {
+   "fieldname": "effectiveness_of_risks",
+   "fieldtype": "Table",
+   "options": "Effectiveness Of Risks"
+  },
+  {
+   "fieldname": "discussion_topic_9",
+   "fieldtype": "Heading",
+   "label": "9. Discussion Topic: Vendor Performance "
+  },
+  {
+   "fieldname": "vendor_performance",
+   "fieldtype": "Table",
+   "options": "Vendor Performance"
+  },
+  {
+   "fieldname": "discussion_topic_10",
+   "fieldtype": "Heading",
+   "label": "10. Discussion Topic:  monitoring and measurement results"
+  },
+  {
+   "fieldname": "measurement_results",
+   "fieldtype": "Table",
+   "options": "Measurement Results"
+  },
+  {
+   "fieldname": "discussion_topic_11",
+   "fieldtype": "Heading",
+   "label": "11. Discussion Topic:  results of evaluation of compliance"
+  },
+  {
+   "fieldname": "results_of_evaluation",
+   "fieldtype": "Table",
+   "options": "Results Of Evaluation"
+  },
+  {
+   "fieldname": "discussion_topic_12",
+   "fieldtype": "Heading",
+   "label": "12. Discussion Topic:  results of workers participation and consultation"
+  },
+  {
+   "fieldname": "results_of_workers_participation",
+   "fieldtype": "Table",
+   "options": "Results Of Workers Participation"
+  },
+  {
+   "fieldname": "discussion_topic_13",
+   "fieldtype": "Heading",
+   "label": "13. Discussion Topic:  Audit results  "
+  },
+  {
+   "fieldname": "audit_results",
+   "fieldtype": "Table",
+   "label": "Audit Results",
+   "options": "Audit Results"
+  },
+  {
+   "fieldname": "discussion_topic_14",
+   "fieldtype": "Heading",
+   "label": "14. Discussion Topic:  Any other topics   "
+  },
+  {
+   "fieldname": "any_other_topics",
+   "fieldtype": "Table",
+   "label": "Any Other Topics",
+   "options": "Any Other Topics"
+  },
+  {
+   "fieldname": "discussion_topic_15",
+   "fieldtype": "Heading",
+   "label": "15. Discussion Topic:  Action from the last quarterly meeting"
+  },
+  {
+   "fieldname": "action_from_the_last_quarterly_meeting",
+   "fieldtype": "Table",
+   "label": "Action From The Last Quarterly Meeting",
+   "options": "Action From The Last Quarterly Meeting"
+  },
+  {
+   "fieldname": "section_break_44",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "next_meeting",
+   "fieldtype": "Date",
+   "label": "Next Meeting"
+  },
+  {
+   "fieldname": "minutes_of_meeting_approval",
+   "fieldtype": "Section Break",
+   "label": "Minutes of Meeting Approval"
+  },
+  {
+   "fieldname": "coordinator",
+   "fieldtype": "Link",
+   "label": "Management Representative ",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_48",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "director",
+   "fieldtype": "Link",
+   "label": "General Manger",
+   "options": "Employee"
+  }
+ ],
+ "modified": "2021-02-01 23:25:41.271939",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Quarterly HSE Report",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

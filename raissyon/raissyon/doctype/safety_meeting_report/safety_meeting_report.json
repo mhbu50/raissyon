@@ -1,0 +1,105 @@
+{
+ "autoname": "SMR.####",
+ "creation": "2020-10-24 00:58:43.215501",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "facility",
+  "conducted_by",
+  "column_break_3",
+  "date",
+  "section_break_5",
+  "list_of_participants",
+  "action_items_from_previous_meeting",
+  "safety_committee_report",
+  "review_of_accidents_injuries_and_near_misses",
+  "topic_to_be_presented",
+  "open_safety_discussion",
+  "list_of_action_items_and_their_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "facility",
+   "fieldtype": "Data",
+   "label": "Facility"
+  },
+  {
+   "fieldname": "conducted_by",
+   "fieldtype": "Link",
+   "label": "Conducted By",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "list_of_participants",
+   "fieldtype": "Small Text",
+   "label": "List of participants"
+  },
+  {
+   "fieldname": "action_items_from_previous_meeting",
+   "fieldtype": "Small Text",
+   "label": "Action Items from Previous Meeting"
+  },
+  {
+   "fieldname": "safety_committee_report",
+   "fieldtype": "Small Text",
+   "label": "Safety Committee Report"
+  },
+  {
+   "fieldname": "review_of_accidents_injuries_and_near_misses",
+   "fieldtype": "Small Text",
+   "label": "Review of Accidents, Injuries and Near Misses"
+  },
+  {
+   "fieldname": "topic_to_be_presented",
+   "fieldtype": "Small Text",
+   "label": "Topic to be Presented"
+  },
+  {
+   "fieldname": "open_safety_discussion",
+   "fieldtype": "Small Text",
+   "label": "Open Safety Discussion"
+  },
+  {
+   "fieldname": "list_of_action_items_and_their_status",
+   "fieldtype": "Small Text",
+   "label": "List of Action Items and Their Status "
+  }
+ ],
+ "modified": "2021-02-01 23:40:18.984547",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Safety Meeting Report",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

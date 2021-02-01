@@ -1,0 +1,38 @@
+{
+ "creation": "2020-12-17 01:25:28.120621",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "evaluate_item",
+  "status"
+ ],
+ "fields": [
+  {
+   "columns": 6,
+   "fieldname": "evaluate_item",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Evaluate Item"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nExcellent\nV. GoodPoor\nGood\nAccepted",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-02-01 23:35:33.929021",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Course Content1",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

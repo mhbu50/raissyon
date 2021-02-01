@@ -1,0 +1,51 @@
+{
+ "creation": "2020-11-21 04:43:13.594290",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "checklist_points",
+  "column_break_2",
+  "status",
+  "observations"
+ ],
+ "fields": [
+  {
+   "columns": 8,
+   "fieldname": "checklist_points",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Checklist Points",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "observations",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Observations"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-02-01 23:37:10.454687",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Storage Checklist",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,89 @@
+{
+ "allow_events_in_timeline": 1,
+ "autoname": "DDC.###",
+ "creation": "2020-10-24 00:28:28.030670",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "submittal__no",
+  "from",
+  "column_break_3",
+  "date",
+  "to",
+  "section_break_6",
+  "document_distribution",
+  "specifications",
+  "table_9"
+ ],
+ "fields": [
+  {
+   "fieldname": "submittal__no",
+   "fieldtype": "Data",
+   "label": "Submittal  No"
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Link",
+   "label": "From",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Table MultiSelect",
+   "label": "To",
+   "options": "To Distribute"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "document_distribution",
+   "fieldtype": "Table",
+   "label": "Document Distribution",
+   "options": "Document Distribution"
+  },
+  {
+   "fieldname": "specifications",
+   "fieldtype": "Small Text",
+   "label": "Specifications"
+  },
+  {
+   "fieldname": "table_9",
+   "fieldtype": "Table",
+   "options": "Process Distribution"
+  }
+ ],
+ "modified": "2021-02-01 23:24:58.590264",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Document Distribution Control",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

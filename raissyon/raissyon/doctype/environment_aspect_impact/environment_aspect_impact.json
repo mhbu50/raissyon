@@ -1,0 +1,160 @@
+{
+ "autoname": "EAI.####",
+ "creation": "2020-11-14 12:35:26.177227",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "assessorteam",
+  "column_break_2",
+  "date",
+  "location__area__project",
+  "assessor_or_team_section",
+  "activity",
+  "environmental_aspect",
+  "column_break_3",
+  "environmental_impact",
+  "operation_controls",
+  "section_break_6",
+  "severity",
+  "column_break_8",
+  "probability",
+  "location__area__project_section",
+  "significant_rating",
+  "significant",
+  "section_break_13",
+  "material_safety_data_sheet",
+  "alternative_green_product_available",
+  "additional_controls"
+ ],
+ "fields": [
+  {
+   "fieldname": "assessorteam",
+   "fieldtype": "Data",
+   "label": "Assessor/Team"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "location__area__project",
+   "fieldtype": "Data",
+   "label": "Location / Area / Project"
+  },
+  {
+   "fieldname": "assessor_or_team_section",
+   "fieldtype": "Section Break",
+   "label": "Assessor or team"
+  },
+  {
+   "fieldname": "activity",
+   "fieldtype": "Small Text",
+   "label": "Activity"
+  },
+  {
+   "fieldname": "environmental_aspect",
+   "fieldtype": "Small Text",
+   "label": "Environmental Aspect"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "environmental_impact",
+   "fieldtype": "Small Text",
+   "label": "Environmental Impact"
+  },
+  {
+   "fieldname": "operation_controls",
+   "fieldtype": "Small Text",
+   "label": "Operation Controls"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "severity",
+   "fieldtype": "Int",
+   "label": "Severity"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "probability",
+   "fieldtype": "Int",
+   "label": "Probability"
+  },
+  {
+   "fieldname": "location__area__project_section",
+   "fieldtype": "Section Break",
+   "label": "Location / Area / Project"
+  },
+  {
+   "description": "S x P",
+   "fieldname": "significant_rating",
+   "fieldtype": "Read Only",
+   "label": "Significant Rating",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "significant",
+   "fieldtype": "Check",
+   "label": "Significant"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "material_safety_data_sheet",
+   "fieldtype": "Check",
+   "label": "Material Safety Data Sheet"
+  },
+  {
+   "default": "0",
+   "fieldname": "alternative_green_product_available",
+   "fieldtype": "Check",
+   "label": "Alternative Green Product available"
+  },
+  {
+   "fieldname": "additional_controls",
+   "fieldtype": "Small Text",
+   "label": "Additional Controls"
+  }
+ ],
+ "modified": "2021-02-01 23:37:52.194408",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Environment Aspect Impact",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

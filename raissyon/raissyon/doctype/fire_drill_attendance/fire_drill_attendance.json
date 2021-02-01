@@ -1,0 +1,37 @@
+{
+ "creation": "2020-11-20 23:16:25.062716",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "print_name",
+  "signature"
+ ],
+ "fields": [
+  {
+   "fieldname": "print_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Print Name",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "print_name.sign",
+   "fieldname": "signature",
+   "fieldtype": "Attach Image",
+   "label": "Signature",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-02-01 23:37:04.787493",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Fire Drill Attendance",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

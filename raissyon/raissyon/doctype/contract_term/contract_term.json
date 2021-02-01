@@ -1,0 +1,94 @@
+{
+ "allow_rename": 1,
+ "autoname": "field:term",
+ "creation": "2020-11-10 21:14:15.670170",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "term_code",
+  "term",
+  "ar",
+  "en",
+  "related_field"
+ ],
+ "fields": [
+  {
+   "fieldname": "term_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Term Code"
+  },
+  {
+   "fieldname": "term",
+   "fieldtype": "Data",
+   "label": "Term",
+   "unique": 1
+  },
+  {
+   "fieldname": "ar",
+   "fieldtype": "Text Editor",
+   "label": "AR"
+  },
+  {
+   "fieldname": "en",
+   "fieldtype": "Text Editor",
+   "label": "EN"
+  },
+  {
+   "fieldname": "related_field",
+   "fieldtype": "Data",
+   "label": "Related Field"
+  }
+ ],
+ "modified": "2021-02-01 23:22:12.041721",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Contract Term",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "restrict_to_domain": "Services",
+ "search_fields": "term_code,term",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,249 @@
+{
+ "autoname": "SSQ.####",
+ "creation": "2020-12-26 15:43:37.349073",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "instructions_1",
+  "instructions_2",
+  "section_break_3",
+  "name_of_firm",
+  "address",
+  "column_break_7",
+  "principal_office",
+  "type",
+  "corporation_section",
+  "date_of_incorporation",
+  "president",
+  "vice_presidents",
+  "column_break_13",
+  "place",
+  "treasurer",
+  "secretary",
+  "individual_section",
+  "date_of_organization",
+  "name_addresses",
+  "other_section",
+  "describe_organization_and_name_principals",
+  "section_break_22",
+  "q1",
+  "q2",
+  "q3",
+  "yes_q3",
+  "q4",
+  "q5",
+  "q6",
+  "q7",
+  "q8",
+  "section_break_32",
+  "completed_by",
+  "date",
+  "column_break_35",
+  "title"
+ ],
+ "fields": [
+  {
+   "fieldname": "instructions_1",
+   "fieldtype": "Heading",
+   "label": "Instructions: Please complete this questionnaire to the best of your knowledge. Only complete the information applicable to your business. "
+  },
+  {
+   "fieldname": "instructions_2",
+   "fieldtype": "Heading",
+   "label": "If you have any questions, please feel free to contact the Raissyon for Trading & Contracting Personnel that sent the Survey form. "
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "name_of_firm",
+   "fieldtype": "Data",
+   "label": "Name of Firm"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "principal_office",
+   "fieldtype": "Data",
+   "label": "Principal Office "
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "\nCorporation\nPartnership\nIndividual\nJoint Venture\nOther"
+  },
+  {
+   "depends_on": "eval:doc.type ==\"Corporation\"",
+   "fieldname": "corporation_section",
+   "fieldtype": "Section Break",
+   "label": "Corporation"
+  },
+  {
+   "fieldname": "date_of_incorporation",
+   "fieldtype": "Data",
+   "label": "Date of Incorporation"
+  },
+  {
+   "fieldname": "president",
+   "fieldtype": "Data",
+   "label": "President"
+  },
+  {
+   "fieldname": "vice_presidents",
+   "fieldtype": "Data",
+   "label": "Vice Presidents"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "place",
+   "fieldtype": "Data",
+   "label": "Place"
+  },
+  {
+   "fieldname": "treasurer",
+   "fieldtype": "Data",
+   "label": "Treasurer"
+  },
+  {
+   "fieldname": "secretary",
+   "fieldtype": "Data",
+   "label": "Secretary"
+  },
+  {
+   "depends_on": "eval:doc.type ==\"Individual\"",
+   "fieldname": "individual_section",
+   "fieldtype": "Section Break",
+   "label": "Individual"
+  },
+  {
+   "fieldname": "date_of_organization",
+   "fieldtype": "Date",
+   "label": "Date of Organization"
+  },
+  {
+   "fieldname": "name_addresses",
+   "fieldtype": "Small Text",
+   "label": "Name & Addresses of general partners"
+  },
+  {
+   "depends_on": "eval:doc.type ==\"Other\"",
+   "fieldname": "other_section",
+   "fieldtype": "Section Break",
+   "label": "Other"
+  },
+  {
+   "fieldname": "describe_organization_and_name_principals",
+   "fieldtype": "Text",
+   "label": "describe organization and name principals"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "q1",
+   "fieldtype": "Int",
+   "label": "1. How many years has your organization been in business as a supplier?"
+  },
+  {
+   "fieldname": "q2",
+   "fieldtype": "Int",
+   "label": "2. How many years has your organization been in business under its present business name ?"
+  },
+  {
+   "fieldname": "q3",
+   "fieldtype": "Select",
+   "label": "3. Have you ever provided services or products to our company ?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.q3 == \"Yes\"",
+   "fieldname": "yes_q3",
+   "fieldtype": "Small Text",
+   "label": "If so, notes dates, departments and the name of personnel to whom you provided such items"
+  },
+  {
+   "fieldname": "q4",
+   "fieldtype": "Small Text",
+   "label": "4. Please list the categories of skilled personnel your firm can provide and those categories in which you specialize"
+  },
+  {
+   "fieldname": "q5",
+   "fieldtype": "Small Text",
+   "label": "5. Please list current customers and approximate Saudi riyal value"
+  },
+  {
+   "fieldname": "q6",
+   "fieldtype": "Small Text",
+   "label": "6. In which categories is your organization legally qualified to conduct business?"
+  },
+  {
+   "fieldname": "q7",
+   "fieldtype": "Small Text",
+   "label": "7. Trade references (names, addresses, phone numbers)"
+  },
+  {
+   "fieldname": "q8",
+   "fieldtype": "Small Text",
+   "label": "8. Bank references (names, branch addresses, phone numbers)"
+  },
+  {
+   "fieldname": "section_break_32",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "completed_by",
+   "fieldtype": "Data",
+   "label": "Completed by"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  }
+ ],
+ "modified": "2021-02-01 23:25:33.160261",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Supplier Selection Questionnaire",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

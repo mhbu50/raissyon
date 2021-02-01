@@ -1,0 +1,165 @@
+{
+ "autoname": "RR.####",
+ "creation": "2020-10-31 02:36:45.389835",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "process_1",
+  "activity",
+  "column_break_3",
+  "issue",
+  "impacts",
+  "rating_section",
+  "severity_1",
+  "detection_1",
+  "column_break_7",
+  "probability_1",
+  "significance",
+  "section_break_10",
+  "responsibility",
+  "target",
+  "column_break_14",
+  "action_to_address_risks_opportunities",
+  "revised_ratings_for_residual_risk_section",
+  "severity_2",
+  "detection_2",
+  "column_break_18",
+  "probability_2",
+  "spd_2"
+ ],
+ "fields": [
+  {
+   "fieldname": "process_1",
+   "fieldtype": "Small Text",
+   "label": "Process"
+  },
+  {
+   "fieldname": "activity",
+   "fieldtype": "Small Text",
+   "label": "Activity"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "issue",
+   "fieldtype": "Small Text",
+   "label": "Issue"
+  },
+  {
+   "fieldname": "impacts",
+   "fieldtype": "Small Text",
+   "label": "Impacts"
+  },
+  {
+   "fieldname": "rating_section",
+   "fieldtype": "Section Break",
+   "label": "Rating"
+  },
+  {
+   "fieldname": "severity_1",
+   "fieldtype": "Int",
+   "label": "Severity (S)"
+  },
+  {
+   "fieldname": "detection_1",
+   "fieldtype": "Int",
+   "label": "Detection (D)"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "probability_1",
+   "fieldtype": "Int",
+   "label": "Probability (P)"
+  },
+  {
+   "description": "(S*P*D)",
+   "fieldname": "significance",
+   "fieldtype": "Read Only",
+   "label": "Significance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "responsibility",
+   "fieldtype": "Link",
+   "label": "Responsibility",
+   "options": "User"
+  },
+  {
+   "fieldname": "target",
+   "fieldtype": "Data",
+   "label": "Target"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "action_to_address_risks_opportunities",
+   "fieldtype": "Small Text",
+   "label": "Action to address Risks / Opportunities "
+  },
+  {
+   "fieldname": "revised_ratings_for_residual_risk_section",
+   "fieldtype": "Section Break",
+   "label": "Revised Ratings for Residual Risk"
+  },
+  {
+   "fieldname": "severity_2",
+   "fieldtype": "Int",
+   "label": "Severity (S)"
+  },
+  {
+   "fieldname": "detection_2",
+   "fieldtype": "Int",
+   "label": "Detection (D)"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "probability_2",
+   "fieldtype": "Int",
+   "label": "Probability (P)"
+  },
+  {
+   "fieldname": "spd_2",
+   "fieldtype": "Int",
+   "label": "S*P*D",
+   "read_only": 1
+  }
+ ],
+ "modified": "2021-02-01 23:38:03.365516",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Risk Register",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

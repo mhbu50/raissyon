@@ -1,0 +1,66 @@
+{
+ "autoname": "JCT.####",
+ "creation": "2020-11-10 21:20:02.136548",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "term",
+  "column_break_2",
+  "term_code",
+  "section_break_4",
+  "en",
+  "ar",
+  "related_field"
+ ],
+ "fields": [
+  {
+   "fieldname": "term",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Term",
+   "options": "Contract Term"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "term.term_code",
+   "fieldname": "term_code",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Term Code"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "en",
+   "fieldtype": "Text Editor",
+   "label": "EN"
+  },
+  {
+   "fieldname": "ar",
+   "fieldtype": "Text Editor",
+   "label": "AR"
+  },
+  {
+   "fetch_from": "term.related_field",
+   "fieldname": "related_field",
+   "fieldtype": "Data",
+   "label": "Related Field"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-02-01 23:22:20.065692",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Job Contract Term",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,84 @@
+{
+ "creation": "2020-12-23 00:55:27.383229",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "regulatory_agency",
+  "compliance_issue",
+  "compliance_status",
+  "if_no_corrective_action",
+  "column_break_5",
+  "article",
+  "responsible_person",
+  "completion_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "regulatory_agency",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Regulatory agency"
+  },
+  {
+   "fieldname": "compliance_issue",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Compliance issue"
+  },
+  {
+   "fieldname": "compliance_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Compliance Status",
+   "options": "\nYes\nNo\nNA"
+  },
+  {
+   "depends_on": "eval:doc.compliance_status == \"No\"",
+   "fieldname": "if_no_corrective_action",
+   "fieldtype": "Data",
+   "label": "If No, Corrective Action?"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "article",
+   "fieldtype": "Data",
+   "label": "Article"
+  },
+  {
+   "fieldname": "responsible_person",
+   "fieldtype": "Link",
+   "label": "Responsible Person",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "completion_date",
+   "fieldtype": "Date",
+   "label": "Completion Date"
+  }
+ ],
+ "modified": "2021-02-01 23:28:18.009646",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Legal Register details",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

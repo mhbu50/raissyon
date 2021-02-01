@@ -1,0 +1,138 @@
+{
+ "creation": "2020-11-18 01:56:42.951663",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "name_of_program",
+  "program_date",
+  "purpose_of_training",
+  "column_break_5",
+  "supervisor",
+  "training_type",
+  "location",
+  "to_be_completed_by_supervisor_or_manager_section",
+  "employee_eligible",
+  "approximate_costs_section",
+  "transportation",
+  "accommodation",
+  "meals",
+  "related_expenses",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "name_of_program",
+   "fieldtype": "Data",
+   "label": "Name of program"
+  },
+  {
+   "fieldname": "program_date",
+   "fieldtype": "Datetime",
+   "label": "Program Date"
+  },
+  {
+   "fieldname": "purpose_of_training",
+   "fieldtype": "Small Text",
+   "label": "Purpose of Training"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.reports_to",
+   "fieldname": "supervisor",
+   "fieldtype": "Link",
+   "label": "Supervisor",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "training_type",
+   "fieldtype": "Select",
+   "label": "Training Type",
+   "options": "\nInternal\nExternal"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "to_be_completed_by_supervisor_or_manager_section",
+   "fieldtype": "Section Break",
+   "label": "To be completed by Supervisor or Manager "
+  },
+  {
+   "fieldname": "employee_eligible",
+   "fieldtype": "Select",
+   "label": "Employee Eligible",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "approximate_costs_section",
+   "fieldtype": "Section Break",
+   "label": "Approximate costs"
+  },
+  {
+   "default": "0",
+   "fieldname": "transportation",
+   "fieldtype": "Currency",
+   "label": "Transportation"
+  },
+  {
+   "default": "0",
+   "fieldname": "accommodation",
+   "fieldtype": "Currency",
+   "label": "Accommodation"
+  },
+  {
+   "default": "0",
+   "fieldname": "meals",
+   "fieldtype": "Currency",
+   "label": "Meals"
+  },
+  {
+   "default": "0",
+   "fieldname": "related_expenses",
+   "fieldtype": "Currency",
+   "label": "Related Expenses"
+  },
+  {
+   "default": "0",
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "TOTAL",
+   "read_only": 1
+  }
+ ],
+ "modified": "2021-02-01 23:37:25.269387",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Training Request",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

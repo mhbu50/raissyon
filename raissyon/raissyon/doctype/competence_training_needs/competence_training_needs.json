@@ -1,0 +1,42 @@
+{
+ "creation": "2020-12-23 01:50:08.277107",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "action_item_description",
+  "responsible_persondepartmentunit",
+  "target_date_or_deadline"
+ ],
+ "fields": [
+  {
+   "fieldname": "action_item_description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Action Item Description"
+  },
+  {
+   "fieldname": "responsible_persondepartmentunit",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Responsible Person/Department/Unit"
+  },
+  {
+   "fieldname": "target_date_or_deadline",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Target Date or Deadline"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-02-01 23:32:54.021602",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Competence training Needs",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,180 @@
+{
+ "autoname": "INMR.######",
+ "creation": "2020-11-29 00:32:19.282869",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project__location",
+  "date_of_occurrence",
+  "column_break_3",
+  "accidentincidentnear_miss",
+  "situation",
+  "section_break_6",
+  "persons_affected",
+  "equipments_affected",
+  "facilities_affected",
+  "medical_care_correction_taken",
+  "section_break_11",
+  "total_lost_time",
+  "column_break_13",
+  "lost_time_category",
+  "section_break_17",
+  "root_cause_for_the_situation",
+  "corrective_action",
+  "section_break_20",
+  "assigned_to",
+  "target_date",
+  "completed_date",
+  "column_break_24",
+  "name__signature_for_completion",
+  "verification_date",
+  "name__signature_for_verification"
+ ],
+ "fields": [
+  {
+   "fieldname": "project__location",
+   "fieldtype": "Data",
+   "label": "Project / Location"
+  },
+  {
+   "fieldname": "date_of_occurrence",
+   "fieldtype": "Date",
+   "label": "Date of Occurrence"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accidentincidentnear_miss",
+   "fieldtype": "Data",
+   "label": "Accident/Incident/Near_Miss "
+  },
+  {
+   "fieldname": "situation",
+   "fieldtype": "Select",
+   "label": "Situation",
+   "options": "\nCritical\nMajor\nMinor"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "persons_affected",
+   "fieldtype": "Small Text",
+   "label": "Persons Affected"
+  },
+  {
+   "fieldname": "equipments_affected",
+   "fieldtype": "Small Text",
+   "label": "Equipment's Affected"
+  },
+  {
+   "fieldname": "facilities_affected",
+   "fieldtype": "Small Text",
+   "label": "Facilities Affected "
+  },
+  {
+   "fieldname": "medical_care_correction_taken",
+   "fieldtype": "Small Text",
+   "label": "Medical Care/ correction taken"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_lost_time",
+   "fieldtype": "Data",
+   "label": "Total Lost Time"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lost_time_category",
+   "fieldtype": "Select",
+   "label": "Lost Time Category",
+   "options": "\nRecordable\nNon Recordable"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "root_cause_for_the_situation",
+   "fieldtype": "Small Text",
+   "label": "Root Cause for the Situation "
+  },
+  {
+   "fieldname": "corrective_action",
+   "fieldtype": "Small Text",
+   "label": "Corrective Action"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned to",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "target_date",
+   "fieldtype": "Date",
+   "label": "Target Date"
+  },
+  {
+   "fieldname": "completed_date",
+   "fieldtype": "Date",
+   "label": "Completed Date"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "name__signature_for_completion",
+   "fieldtype": "Data",
+   "label": "Name / Signature for Completion"
+  },
+  {
+   "fieldname": "verification_date",
+   "fieldtype": "Date",
+   "label": "Verification Date"
+  },
+  {
+   "fieldname": "name__signature_for_verification",
+   "fieldtype": "Data",
+   "label": "Name / Signature for Verification"
+  }
+ ],
+ "modified": "2021-02-01 23:35:55.766105",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Incident Near Miss Report",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

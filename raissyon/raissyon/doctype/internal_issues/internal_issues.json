@@ -1,0 +1,65 @@
+{
+ "creation": "2020-10-31 01:24:46.542838",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "issue",
+  "concerned_function",
+  "monitoring_mechanism",
+  "review_mechanism",
+  "responsible",
+  "frequency",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "issue",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Issue"
+  },
+  {
+   "fieldname": "concerned_function",
+   "fieldtype": "Data",
+   "label": "Concerned Function"
+  },
+  {
+   "fieldname": "monitoring_mechanism",
+   "fieldtype": "Data",
+   "label": "Monitoring Mechanism"
+  },
+  {
+   "fieldname": "review_mechanism",
+   "fieldtype": "Data",
+   "label": "Review Mechanism"
+  },
+  {
+   "fieldname": "responsible",
+   "fieldtype": "Data",
+   "label": "Responsible"
+  },
+  {
+   "fieldname": "frequency",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Frequency"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Status"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-02-01 23:40:05.825422",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Internal Issues",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

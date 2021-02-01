@@ -1,0 +1,74 @@
+{
+ "creation": "2020-10-23 21:42:35.690789",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "revision",
+  "column_break_3",
+  "issue",
+  "file",
+  "section_break_6",
+  "description",
+  "revision_history"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "revision",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Revision",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "issue",
+   "fieldtype": "Data",
+   "label": "Issue"
+  },
+  {
+   "fieldname": "file",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "File",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "in_preview": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "revision_history",
+   "fieldtype": "HTML",
+   "label": "Revision History",
+   "options": "<div id=\"resolte-contaniner\"></div>"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-02-01 23:22:43.786396",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Revision History",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

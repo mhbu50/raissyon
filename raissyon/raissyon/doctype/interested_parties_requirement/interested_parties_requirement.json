@@ -1,0 +1,80 @@
+{
+ "autoname": "IPR.####",
+ "creation": "2020-10-31 01:51:50.066001",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "interested_party",
+  "requirement",
+  "monitoring_mechanism",
+  "review_mechanism",
+  "responsible",
+  "frequency",
+  "other"
+ ],
+ "fields": [
+  {
+   "fieldname": "interested_party",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Interested Party"
+  },
+  {
+   "fieldname": "requirement",
+   "fieldtype": "Small Text",
+   "label": "Requirement"
+  },
+  {
+   "fieldname": "monitoring_mechanism",
+   "fieldtype": "Small Text",
+   "label": "Monitoring Mechanism"
+  },
+  {
+   "fieldname": "review_mechanism",
+   "fieldtype": "Small Text",
+   "label": "Review Mechanism"
+  },
+  {
+   "fieldname": "responsible",
+   "fieldtype": "Link",
+   "label": "Responsible",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "frequency",
+   "fieldtype": "Select",
+   "label": "Frequency",
+   "options": "\nDaily\nWeekly\nMonthly\nQuarterly\nYearly\nOther"
+  },
+  {
+   "depends_on": "eval:doc.frequency ==\"Other\"",
+   "fieldname": "other",
+   "fieldtype": "Data",
+   "label": "Frequency Other"
+  }
+ ],
+ "modified": "2021-02-01 23:37:57.676001",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Interested Parties Requirement",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

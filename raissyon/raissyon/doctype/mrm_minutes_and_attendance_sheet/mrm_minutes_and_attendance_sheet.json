@@ -1,0 +1,103 @@
+{
+ "autoname": "MMAA.#####",
+ "creation": "2020-12-26 16:50:28.178544",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "review_input_section",
+  "mrm_input",
+  "review_output_section",
+  "mrm_output",
+  "section_break_32",
+  "table_34",
+  "record_of_attendance",
+  "section_break_36",
+  "prepared_by",
+  "reviewed_by",
+  "approved_by"
+ ],
+ "fields": [
+  {
+   "description": "Tick discussed topics and enclose attachment if required",
+   "fieldname": "review_input_section",
+   "fieldtype": "Section Break",
+   "label": "Review Input"
+  },
+  {
+   "fieldname": "mrm_input",
+   "fieldtype": "Table",
+   "options": "MRM Input"
+  },
+  {
+   "description": "Tick as appropriate",
+   "fieldname": "review_output_section",
+   "fieldtype": "Section Break",
+   "label": "Review Output"
+  },
+  {
+   "fieldname": "mrm_output",
+   "fieldtype": "Table",
+   "options": "MRM Output"
+  },
+  {
+   "fieldname": "section_break_32",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_34",
+   "fieldtype": "Table",
+   "options": "MRM Action"
+  },
+  {
+   "fieldname": "record_of_attendance",
+   "fieldtype": "Table",
+   "label": "Record of Attendance",
+   "options": "Record of Attendance"
+  },
+  {
+   "fieldname": "section_break_36",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Link",
+   "label": "Prepared by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "reviewed_by",
+   "fieldtype": "Link",
+   "label": "Reviewed by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved by",
+   "options": "Employee"
+  }
+ ],
+ "modified": "2021-02-01 23:23:45.674706",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "MRM Minutes And Attendance Sheet",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

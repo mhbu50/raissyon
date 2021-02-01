@@ -1,0 +1,60 @@
+{
+ "creation": "2020-12-28 19:39:43.034228",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "creationchange_number",
+  "documentrecord_title",
+  "documentrecord_number",
+  "column_break_4",
+  "revision_number",
+  "request_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "creationchange_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Creation/Change Number"
+  },
+  {
+   "fieldname": "documentrecord_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Document/Record Title"
+  },
+  {
+   "fieldname": "documentrecord_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Document/Record Number"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "revision_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Revision Number "
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Request Date"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-02-01 23:24:45.645383",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Change Request Detail",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

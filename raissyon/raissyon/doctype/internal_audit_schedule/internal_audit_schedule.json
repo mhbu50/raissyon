@@ -1,0 +1,75 @@
+{
+ "autoname": "IAS.######",
+ "creation": "2020-11-29 01:00:58.867252",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "audit_date",
+  "column_break_3",
+  "audit",
+  "incharge",
+  "section_break_6",
+  "table_7"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "label": "Project"
+  },
+  {
+   "fieldname": "audit_date",
+   "fieldtype": "Date",
+   "label": "Audit Date"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "audit",
+   "fieldtype": "Int",
+   "label": "Audit#"
+  },
+  {
+   "fieldname": "incharge",
+   "fieldtype": "Link",
+   "label": "In-charge",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_7",
+   "fieldtype": "Table",
+   "options": "Audit Schedule"
+  }
+ ],
+ "modified": "2021-02-01 23:36:10.508548",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Internal Audit Schedule",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

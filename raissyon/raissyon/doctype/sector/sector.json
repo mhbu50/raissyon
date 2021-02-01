@@ -1,0 +1,59 @@
+{
+ "autoname": "field:sector",
+ "creation": "2020-09-26 19:37:18.937366",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sector",
+  "code"
+ ],
+ "fields": [
+  {
+   "fieldname": "sector",
+   "fieldtype": "Data",
+   "label": "Sector",
+   "translatable": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Code"
+  }
+ ],
+ "modified": "2021-02-01 23:23:16.229996",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Sector",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "sector",
+ "track_changes": 1
+}

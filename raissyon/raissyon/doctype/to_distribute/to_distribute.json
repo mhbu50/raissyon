@@ -1,0 +1,27 @@
+{
+ "creation": "2020-12-28 19:33:32.613314",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-02-01 23:25:07.121474",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "To Distribute",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,64 @@
+{
+ "autoname": "DCCR.####",
+ "creation": "2020-11-14 13:07:14.721787",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "table_1",
+  "requester_section",
+  "reason_for_creationchange",
+  "reviewer_section",
+  "details_of_change"
+ ],
+ "fields": [
+  {
+   "fieldname": "table_1",
+   "fieldtype": "Table",
+   "options": "Change Request Detail"
+  },
+  {
+   "fieldname": "requester_section",
+   "fieldtype": "Section Break",
+   "label": "Requester"
+  },
+  {
+   "fieldname": "reason_for_creationchange",
+   "fieldtype": "Small Text",
+   "label": "Reason for Creation/Change"
+  },
+  {
+   "fieldname": "reviewer_section",
+   "fieldtype": "Section Break",
+   "label": "Reviewer"
+  },
+  {
+   "fieldname": "details_of_change",
+   "fieldtype": "Small Text",
+   "label": "Details of Change"
+  }
+ ],
+ "modified": "2021-02-01 23:24:37.178784",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Document Creation and Change Request",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

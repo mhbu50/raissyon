@@ -1,0 +1,61 @@
+{
+ "creation": "2020-10-31 00:59:49.110649",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "title",
+  "user",
+  "action",
+  "date"
+ ],
+ "fields": [
+  {
+   "fetch_from": "user.full_name",
+   "fieldname": "name1",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Name",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "name1.designation",
+   "fieldname": "title",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Title"
+  },
+  {
+   "fetch_from": "name1.user_id",
+   "fieldname": "user",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Email"
+  },
+  {
+   "fieldname": "action",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Action",
+   "options": "\nPrepared By\nVerified By\nReceived By"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-02-01 23:37:44.481381",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Process Distribution",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

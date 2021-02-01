@@ -1,0 +1,61 @@
+{
+ "autoname": "IXI.##",
+ "creation": "2020-11-16 19:34:40.922098",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "internal_section",
+  "internal_issues",
+  "external_section",
+  "external_issues"
+ ],
+ "fields": [
+  {
+   "fieldname": "internal_section",
+   "fieldtype": "Section Break",
+   "label": "Internal"
+  },
+  {
+   "fieldname": "internal_issues",
+   "fieldtype": "Table",
+   "label": "Internal Issues",
+   "options": "Internal Issues"
+  },
+  {
+   "bold": 1,
+   "fieldname": "external_section",
+   "fieldtype": "Section Break",
+   "label": "External"
+  },
+  {
+   "fieldname": "external_issues",
+   "fieldtype": "Table",
+   "label": "External Issues",
+   "options": "External Issues"
+  }
+ ],
+ "in_create": 1,
+ "modified": "2021-02-01 23:23:25.065765",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Internal External Issues Registry",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

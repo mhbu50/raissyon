@@ -1,0 +1,285 @@
+{
+ "autoname": "DEE.######",
+ "creation": "2020-11-20 22:52:59.557041",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "location",
+  "column_break_3",
+  "date_time",
+  "type",
+  "location_section",
+  "description",
+  "personnel_involved",
+  "emergency_team_members",
+  "column_break_8",
+  "time_initiated",
+  "time_completed",
+  "time_evacuation",
+  "time_all_clear_given",
+  "fire_alarm_reset_by",
+  "assembly_points_section",
+  "assembly_point_a",
+  "column_break_15",
+  "assembly_point_b",
+  "section_break_17",
+  "equipment_type_number",
+  "column_break_20",
+  "response_time_emergency_team",
+  "response_time_of_external_emergency",
+  "section_break_21",
+  "was_alarm_heard_throughout_the_building",
+  "were_all_alarm_devices_operating_correctly",
+  "if_no_note_locations",
+  "column_break_26",
+  "did_all_occupants_evacuate_the_building",
+  "if_no_note_room_numbers",
+  "did_occupants_assemble_in_designated_areas",
+  "section_break_26",
+  "prepared_by",
+  "designation",
+  "column_break_29",
+  "date",
+  "signature",
+  "fire_drill_attendance_section",
+  "fire_drill_attendance"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_time",
+   "fieldtype": "Datetime",
+   "label": "Date/ Time"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type"
+  },
+  {
+   "fieldname": "location_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "Brief Description of Drill / Scenario",
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "personnel_involved",
+   "fieldtype": "Int",
+   "label": "No. Personnel Involved"
+  },
+  {
+   "fieldname": "emergency_team_members",
+   "fieldtype": "Data",
+   "label": "Emergency Team Members"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "time_initiated",
+   "fieldtype": "Time",
+   "label": "Time Initiated"
+  },
+  {
+   "fieldname": "time_completed",
+   "fieldtype": "Time",
+   "label": "Time Completed"
+  },
+  {
+   "fieldname": "time_evacuation",
+   "fieldtype": "Data",
+   "label": "Time Evacuation"
+  },
+  {
+   "fieldname": "time_all_clear_given",
+   "fieldtype": "Data",
+   "label": "Time All Clear Given"
+  },
+  {
+   "fieldname": "fire_alarm_reset_by",
+   "fieldtype": "Link",
+   "label": "Fire Alarm Reset By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "assembly_points_section",
+   "fieldtype": "Section Break",
+   "label": "Assembly Points"
+  },
+  {
+   "fieldname": "assembly_point_a",
+   "fieldtype": "Link",
+   "label": "Assembly Point A",
+   "options": "Location"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assembly_point_b",
+   "fieldtype": "Link",
+   "label": "Assembly Point B",
+   "options": "Location"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "equipment_type_number",
+   "fieldtype": "Small Text",
+   "label": "Equipment Type/Number"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "response_time_emergency_team",
+   "fieldtype": "Data",
+   "label": "Response Time of Emergency Team"
+  },
+  {
+   "fieldname": "response_time_of_external_emergency",
+   "fieldtype": "Data",
+   "label": "Response Time of External Emergency"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "was_alarm_heard_throughout_the_building",
+   "fieldtype": "Select",
+   "label": "Was alarm heard throughout the building?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "were_all_alarm_devices_operating_correctly",
+   "fieldtype": "Select",
+   "label": "Were all alarm devices operating correctly?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.were_all_alarm_devices_operating_correctly == \"No\"",
+   "fieldname": "if_no_note_locations",
+   "fieldtype": "Data",
+   "label": "If NO, Note Locations"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "did_all_occupants_evacuate_the_building",
+   "fieldtype": "Select",
+   "label": "Did all occupants evacuate the building?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.did_all_occupants_evacuate_the_building == \"No\"",
+   "fieldname": "if_no_note_room_numbers",
+   "fieldtype": "Data",
+   "label": "If NO, Note Room Numbers"
+  },
+  {
+   "fieldname": "did_occupants_assemble_in_designated_areas",
+   "fieldtype": "Select",
+   "label": "Did occupants assemble in designated areas?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "section_break_26",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Link",
+   "label": "Prepared By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "prepared_by.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "prepared_by.sign",
+   "fieldname": "signature",
+   "fieldtype": "Attach Image",
+   "label": "Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fire_drill_attendance_section",
+   "fieldtype": "Section Break",
+   "label": "Fire Drill Attendance"
+  },
+  {
+   "fieldname": "fire_drill_attendance",
+   "fieldtype": "Table",
+   "options": "Fire Drill Attendance"
+  }
+ ],
+ "modified": "2021-02-01 23:36:21.206745",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Mock Drill Exercise Report And Attendance Record",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

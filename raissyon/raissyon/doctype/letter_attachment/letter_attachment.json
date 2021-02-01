@@ -1,0 +1,37 @@
+{
+ "creation": "2020-10-24 14:12:19.483914",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "attach_name",
+  "file"
+ ],
+ "fields": [
+  {
+   "fieldname": "attach_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Attach Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "file",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "File",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-02-01 23:40:27.473734",
+ "modified_by": "Administrator",
+ "module": "Raissyon",
+ "name": "Letter Attachment",
+ "owner": "mhbu50@gmail.com",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
